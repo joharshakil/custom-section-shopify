@@ -1,0 +1,456 @@
+{% comment %} Shopify Custom Section - Process and Benefits Section - Fully responsive design - Shopify best practices applied - Uses Liquid, HTML, CSS, and optional JavaScript {% endcomment %}
+{% schema %} { "name": "Process Section", "settings": [], "presets": [ { "name": "Process Section" } ] } {% endschema %}
+<section class="custom-process-section">
+  <div class="process-container">
+    <!-- Center Image Section -->
+    <div class="main-feature container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-12">
+          <div class="benefits-container">
+            <div class="benefits-row">
+              <div class="benefit-box">
+                <span class="img-icon">
+                  <img src="{{ 'icon1.png' | asset_url }}" alt="Best For" class="">
+                </span>
+                Rich in Antioxidants
+              </div>
+              <div class="benefit-box">
+                <span class="img-icon">
+                  <img src="{{ 'icon2.png' | asset_url }}" alt="Best For" class="">
+                </span>
+                Regulates Blood Sugar
+              </div>
+            </div>
+            <div class="benefits-row">
+              <div class="benefit-box">
+                <span class="img-icon">
+                  <img src="{{ 'icon3.png' | asset_url }}" alt="Best For" class="">
+                </span>
+                Kidneys Health
+              </div>
+              <div class="benefit-box">
+                <span class="img-icon">
+                  <img src="{{ 'icon4.png' | asset_url }}" alt="Best For" class="">
+                </span>
+                Health Care
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-12">
+          <img src="{{ 'image-center.png' | asset_url }}" alt="Best For" class="feature-image">
+        </div>
+        <div class="col-md-4 col-sm-12 col-12">
+          <div class="benefits-container">
+            <div class="benefits-row">
+              <div class="benefit-box">
+                <span class="img-icon">
+                  <img src="{{ 'icon5.png' | asset_url }}" alt="Best For" class="">
+                </span>
+                Gym & Fitness
+              </div>
+              <div class="benefit-box">
+                <span class="img-icon">
+                  <img src="{{ 'icon6.png' | asset_url }}" alt="Best For" class="">
+                </span>
+                Hydration & Electrolytes
+              </div>
+            </div>
+            <div class="benefits-row">
+              <div class="benefit-box">
+                <span class="img-icon">
+                  <img src="{{ 'icon7.png' | asset_url }}" alt="Best For" class="">
+                </span>
+                Beauty & Skin Care
+              </div>
+              <div class="benefit-box">
+                <span class="img-icon">
+                  <img src="{{ 'icon8.png' | asset_url }}" alt="Best For" class="">
+                </span>
+                100% Organic
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="process-container-step">
+      <!-- Process Text -->
+      <div class="process-text">
+        <span class="img-icon">
+          <img src="{{ 'center-icon.png' | asset_url }}" alt="Best For" class="">
+        </span>
+        <div class="process-title">The Process</div>
+        <div class="process-desc">
+          We prioritize having the shortest supply & manufacturing chains possible and maintaining ethical production
+          standards.
+        </div>
+        <a href="#" class="learn-more">Learn More →</a>
+      </div>
+      <!-- Circle -->
+      <div class="circle-container">
+        <!-- Steps -->
+        <div class="step step-1">
+          <div class="step-circle">01</div>
+          <div class="step-text">Harvesting</div>
+          <div class="step-desc">
+            Ingredients are grown in fertile soil in central Thailand – then harvested and transferred to our facility
+            where they are cleaned and prepared for processing.
+          </div>
+        </div>
+        <div class="step step-2">
+          <div class="step-circle">02</div>
+          <div class="step-text">Processing</div>
+          <div class="step-desc">
+            Ingredients are grown in fertile soil in central Thailand – then harvested and transferred to our facility
+            where they are cleaned and prepared for processing.
+          </div>
+        </div>
+        <div class="step step-3">
+          <div class="step-circle">03</div>
+          <div class="step-text">Bottling</div>
+          <div class="step-desc">
+            Ingredients are grown in fertile soil in central Thailand – then harvested and transferred to our facility
+            where they are cleaned and prepared for processing.
+          </div>
+        </div>
+        <div class="step step-4">
+          <div class="step-circle">04</div>
+          <div class="step-text">HPP</div>
+          <div class="step-desc">
+            Ingredients are grown in fertile soil in central Thailand – then harvested and transferred to our facility
+            where they are cleaned and prepared for processing.
+          </div>
+        </div>
+        <div class="step step-5">
+          <div class="step-circle">05</div>
+          <div class="step-text">Freeze</div>
+          <div class="step-desc">
+            Ingredients are grown in fertile soil in central Thailand – then harvested and transferred to our facility
+            where they are cleaned and prepared for processing.
+          </div>
+        </div>
+        <div class="step step-6">
+          <div class="step-circle">06</div>
+          <div class="step-text">Deliver</div>
+          <div class="step-desc">
+            Ingredients are grown in fertile soil in central Thailand – then harvested and transferred to our facility
+            where they are cleaned and prepared for processing.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .feature-image {
+    width: 100%;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #fff;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .process-container-step {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  /* Circle Container */
+  .circle-container {
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: relative;
+    margin: auto;
+    border-top: 5px solid #fff;
+  }
+
+  /* Step Positioning (Using Trigonometry for Equal Spacing) */
+  .step {
+    position: absolute;
+    width: 250px;
+    text-align: center;
+  }
+
+  .step-circle {
+    width: 50px;
+    height: 50px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin: auto;
+    border: 3px solid white;
+  }
+
+  .step.step-1 .step-circle {
+    position: absolute;
+    right: -100px;
+  }
+
+  .step.step-6 .step-circle {
+    position: absolute;
+    left: -100px;
+  }
+
+  .step.step-2 .step-circle {
+    position: absolute;
+    right: -50px;
+    top: 5px;
+  }
+
+  .step.step-5 .step-circle {
+    position: absolute;
+    left: -50px;
+    top: 5px;
+  }
+
+  .step.step-3 .step-circle {
+    position: absolute;
+    right: -85px;
+    top: 5px;
+  }
+
+  .step.step-4 .step-circle {
+    position: absolute;
+    left: -85px;
+    top: 5px;
+  }
+
+  .step-text {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: right;
+    font-family: "Roboto Condensed", serif;
+  }
+
+  .step-desc {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    font-family: "Roboto Condensed", serif;
+    text-align: right;
+  }
+
+  .step-6 .step-desc,
+  .step-5 .step-desc,
+  .step-4 .step-desc {
+    text-align: left;
+  }
+
+  .step-6 .step-text,
+  .step-5 .step-text,
+  .step-4 .step-text {
+    text-align: left;
+  }
+
+  .step-1 {
+    top: 54px;
+    left: -37%;
+  }
+
+  /* Slight adjustment for visibility */
+  .step-2 {
+    top: 45%;
+    left: -43%;
+  }
+
+  .step-3 {
+    top: 84%;
+    left: -30%;
+  }
+
+  .step-4 {
+    top: 84%;
+    right: -30%;
+  }
+
+  .step-5 {
+    top: 45%;
+    right: -43%;
+  }
+
+  .step-6 {
+    top: 54px;
+    right: -37%;
+  }
+
+  /* Process Text */
+  .process-text {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    right: 0px;
+    max-width: 500px;
+    font-family: "Roboto Condensed", serif;
+  }
+
+  .process-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: "Roboto Condensed", serif;
+  }
+
+  .process-desc {
+    font-size: 34px;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .learn-more {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+  }
+
+  .benefits-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+
+  .benefit-box {
+    width: 170px;
+    height: 129px;
+    background: #090808;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0px 30px 20px 0px;
+    color: #fff;
+    font-family: "Roboto Condensed", serif;
+    line-height: 20px;
+  }
+
+  .img-icon {
+    display: block;
+    padding: 20px 0px 10px 0px;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+    .step {
+      margin-left: 40px;
+    }
+
+    .step-text {
+      text-align: left;
+    }
+
+    .step.step-1 .step-circle {
+      left: -65px;
+      right: auto;
+      top: -5px;
+    }
+
+    .step.step-2 .step-circle {
+      left: -65px;
+      right: auto;
+      top: -5px;
+    }
+
+    .step.step-3 .step-circle {
+      position: absolute;
+      left: -65px;
+      right: auto;
+      top: -5px;
+    }
+
+    .step.step-4 .step-circle {
+      left: -65px;
+      right: auto;
+      top: -5px;
+    }
+
+    .step.step-5 .step-circle {
+      left: -65px;
+      right: auto;
+      top: -5px;
+    }
+
+    .step.step-6 .step-circle {
+      left: -65px;
+      right: auto;
+      top: -5px;
+    }
+
+    .feature-image {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .circle-container {
+      border: unset;
+      border-radius: unset;
+      border-left: 5px solid black;
+      width: auto;
+      height: auto;
+    }
+
+    .step {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .step-circle {
+      margin-bottom: 5px;
+    }
+
+    .step-1,
+    .step-2,
+    .step-3,
+    .step-4,
+    .step-5,
+    .step-6 {
+      position: relative;
+      left: auto;
+      right: auto;
+      top: auto;
+      bottom: auto;
+      transform: none;
+      width: auto;
+    }
+
+    .process-text {
+      position: relative;
+    }
+
+    .step-desc {
+      text-align: left;
+    }
+  }
+</style>
